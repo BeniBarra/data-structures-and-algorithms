@@ -9,7 +9,8 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-  return arr.reduce( ( a, b ) =>  a >= b ?  a :  b  )
+  return arr.reduce((high, next)=>(next>high) ? high = next : high ,0);
+  // thanks to Steven for helping with this
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -141,11 +142,7 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  let value = Object.values(arr)
-
-  for (character in arr) {
-    return ( value.includes([])) ? true : false ;
-  }
+  return Object.keys(arr.find(char=>char.name===character)).includes('children');
 };
 
 /* ------------------------------------------------------------------------------------------------
