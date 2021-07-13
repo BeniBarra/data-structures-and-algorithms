@@ -6,7 +6,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 
 ### 401 Data Structures, Code Challenges
 
-- [array-reverse](./c-sharp/README.md)
+- [array-reverse](./c-sharp/array-reverse/README.md)
+- [array-insert-shift](./c-sharp/array-insert-shift/README.md)
 
 ### 301 Code Challenges
 
