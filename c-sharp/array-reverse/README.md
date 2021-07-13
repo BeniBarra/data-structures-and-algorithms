@@ -16,4 +16,4 @@ Take an immutable array and reverse the values from start to end
 ## Approach & Efficiency
 The approach would be to try and achieve this array-reverse solution with a linear method
 
-![array-reversed](./images/array-reverse.png)
+![array-reversed](./array-reverse.png)
