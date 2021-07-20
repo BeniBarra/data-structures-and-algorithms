@@ -44,5 +44,44 @@ namespace DataStructuresTest
       list.Insert(9);
       Assert.Equal("(9) -> (6) -> (3) -> NULL", list.Print());
     }
+
+    [Fact]
+    public void ProofOfAppend()
+    {
+      LinkedList list = new LinkedList();
+      list.Append(3);
+      list.Insert(6);
+      list.Insert(9);
+      Assert.Equal("(9) -> (6) -> (3) -> NULL", list.Print());
+    }
+
+
+
+    [Fact]
+    public void ProofOfInsertBefore()
+    {
+      LinkedList list = new LinkedList();
+      list.Insert(3);
+      list.Insert(6);
+      list.Insert(9);
+      // Test's inserting at middle of list
+      list.InsertBefore(6, 12);
+      // Test's inserting at Head of list
+      list.InsertBefore(9, 15);
+      Assert.Equal("(15) -> (9) -> (12) -> (6) -> (3) -> NULL", list.Print());
+    }
+
+    [Fact]
+    public void ProofOfInsertAfter()
+    {
+      LinkedList list = new LinkedList();
+      list.Insert(3);
+      list.Insert(6);
+      list.Insert(9);
+      // Test's inserting at middle of list
+      list.InsertBefore(6, 12);
+      // Test's inserting at Head of list
+      Assert.Equal("(9) -> (12) -> (6) -> (3) -> NULL", list.Print());
+    }
   }
 }
