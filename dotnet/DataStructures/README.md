@@ -12,4 +12,22 @@ Using an O(1) method, a singly linked list can be created from given values and 
     - LinkedList()
     - Insert()
     - Includes()
-    - Print()
+    - Print()  
+
+## Code Challenge 06 `link-list-insertion`
+
+append:
+- arguments: new value
+- adds a new node with the given value to the end of the list  
+
+insert before:
+- arguments: value, new value
+- adds a new node with the given new value immediately before the first node that has the value specified
+
+insert after:
+- arguments: value, new value
+- badds a new node with the given new value immediately after the first node that has the value specified  
+
+
+## Approach & Efficiency
+![link-list-insertion](./challenge/link-list-insertion.png)

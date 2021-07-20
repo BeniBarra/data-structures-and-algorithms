@@ -7,12 +7,14 @@ namespace DataStructures
     public static void Main(string[] args)
     {
       LinkedList list = new LinkedList();
+      list.Append(2);
       list.Insert(3);
       list.Insert(6);
       list.Insert(9);
       list.Insert(12);
       list.Insert(15);
       list.Insert(18);
+      list.InsertAfter(12, 14);
       list.Print();
     }
   }
