@@ -31,3 +31,14 @@ insert after:
 
 ## Approach & Efficiency
 ![link-list-insertion](./challenge/link-list-insertion.png)
+
+## Code Challenge 07 `link-list-kth`
+
+### kth from end
+argument: a number, k, as a parameter.
+Return the node’s value that is k places from the tail of the linked list.
+You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+
+## Approach & Efficiency
+![link-list-kth](./challenge/linked-list-kth.png)
