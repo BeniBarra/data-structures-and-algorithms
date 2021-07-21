@@ -83,5 +83,38 @@ namespace DataStructuresTest
       // Test's inserting at Head of list
       Assert.Equal("(9) -> (12) -> (6) -> (3) -> NULL", list.Print());
     }
+
+    [Fact]
+    public void ProofOfkth()
+    {
+      LinkedList list = new LinkedList();
+      list.Insert(3);
+      list.Insert(6);
+      list.Insert(9);
+      list.Insert(12);
+      list.Insert(15);
+      list.Insert(18);
+      Assert.Equal(12, list.kthFromEnd(4));
+    }
+
+    [Fact]
+    public void ProofOfkthOutOfRange()
+    {
+      LinkedList list = new LinkedList();
+      list.Insert(3);
+      list.Insert(6);
+      list.Insert(9);
+      list.Insert(12);
+      list.Insert(15);
+      list.Insert(18);
+      Assert.Equal(-1, list.kthFromEnd(10));
+    }
+
+    [Fact]
+    public void ProofOfkthNoList()
+    {
+      LinkedList list = new LinkedList();
+      Assert.Equal(-2, list.kthFromEnd(10));
+    }
   }
 }

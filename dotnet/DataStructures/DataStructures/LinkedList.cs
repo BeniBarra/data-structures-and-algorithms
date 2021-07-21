@@ -15,6 +15,32 @@ namespace DataStructures
 
     }
 
+    public int kthFromEnd(int k)
+    {
+      int length = -1;
+      Node current = Head;
+
+      // Check is there is a list
+      if (Head == null) return -2;
+      //Iterates over list and sets the length to a variabnle
+      while (current != null)
+      {
+        length++;
+        current = current.Next;
+      }
+      // Check if target node is with in range
+      if (k > length | k < 0) return -1;
+
+      // resets current to Head
+      current = Head;
+      // Iterates over list until legnth - iterations equals the k target
+      for (int i = length; i >= k; i--)
+      {
+        current = current.Next;
+      }
+      return current.Value;
+    }
+
     public void Append(int value)
     {
       Node node = new Node(value);
