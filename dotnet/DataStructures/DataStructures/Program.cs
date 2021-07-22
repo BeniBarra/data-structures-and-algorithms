@@ -2,20 +2,24 @@ using System;
 
 namespace DataStructures
 {
-    public class Program
+    public class Program : Zipper
     {
     public static void Main(string[] args)
     {
-      LinkedList list = new LinkedList();
-      list.Append(2);
-      list.Insert(3);
-      list.Insert(6);
-      list.Insert(9);
-      list.Insert(12);
-      list.Insert(15);
-      list.Insert(18);
-      list.InsertAfter(12, 14);
-      list.Print();
+      LinkedList list1 = new LinkedList();
+      list1.Insert(9);
+      list1.Insert(7);
+      list1.Insert(5);
+      list1.Insert(3);
+      list1.Insert(1);
+
+      LinkedList list2 = new LinkedList();
+      list2.Insert(8);
+      list2.Insert(6);
+      list2.Insert(4);
+      list2.Insert(2);
+
+      ZipLists(list1, list2);
     }
   }
 }

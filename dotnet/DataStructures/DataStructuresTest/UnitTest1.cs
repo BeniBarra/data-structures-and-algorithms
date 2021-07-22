@@ -4,7 +4,7 @@ using Xunit;
 
 namespace DataStructuresTest
 {
-  public class UnitTest1
+  public class UnitTest1 : Zipper
   {
     [Fact]
     public void ProofOfLife()
@@ -115,6 +115,28 @@ namespace DataStructuresTest
     {
       LinkedList list = new LinkedList();
       Assert.Equal(-2, list.kthFromEnd(10));
+    }
+
+    [Fact]
+    public void ZipperTests()
+    {
+      LinkedList list1 = new LinkedList();
+      list1.Insert(9);
+      list1.Insert(7);
+      list1.Insert(5);
+      list1.Insert(3);
+      list1.Insert(1);
+
+      LinkedList list2 = new LinkedList();
+      list2.Insert(8);
+      list2.Insert(6);
+      list2.Insert(4);
+      list2.Insert(2);
+
+      Assert.Equal(
+        "(1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> NULL",
+        ZipLists(list1, list2)
+        );
     }
   }
 }

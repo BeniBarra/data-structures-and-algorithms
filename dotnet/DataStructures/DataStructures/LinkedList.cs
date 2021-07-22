@@ -115,7 +115,7 @@ namespace DataStructures
         node.Next = Head;
       }
       Head = node;
-      Console.WriteLine($"Node: {value} added");
+      //Console.WriteLine($"Node: {value} added");
     }
 
     public bool Includes(int value)
