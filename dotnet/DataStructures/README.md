@@ -42,3 +42,12 @@ You have access to the Node class and all the properties on the Linked List clas
 
 ## Approach & Efficiency
 ![link-list-kth](./challenge/linked-list-kth.png)
+
+## Code Challenge 08 `link-list-zip`
+
+### Zip two linked list
+Write a function that takes in 2 lists as arguments  
+Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+## Approach & Efficiency
+![link-list-kth](./challenge/linked-list-zip.png)

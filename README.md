@@ -12,6 +12,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [linked-list](./dotnet/DataStructures/README.md)
 - [linked-list-insertion](./dotnet/DataStructures/README.md)
 - [linked-list-kth](./dotnet/DataStructures/README.md)
+- [linked-list-zip](./dotnet/DataStructures/README.md)
 
 ### 301 Code Challenges
 
