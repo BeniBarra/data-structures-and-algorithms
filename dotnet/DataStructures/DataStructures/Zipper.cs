@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-  public class Zipper
+  public class Zipper<T>
   {
-    public static string ZipLists(LinkedList list1, LinkedList list2)
+    public static T ZipLists(LinkedList<T> list1, LinkedList<T> list2)
     {
-      Node current1 = list1.Head;
-      Node current2 = list2.Head;
+      Node<T> current1 = list1.Head;
+      Node<T> current2 = list2.Head;
 
       if (current1 == null || current2 == null)
       {
@@ -20,7 +20,7 @@ namespace DataStructures
       while (current1 != null && current2 != null)
       {
         // Store list1 next Node
-        Node storedNext = current1.Next;
+        Node<T> storedNext = current1.Next;
         // Point current list1 next to list 2
         current1.Next = current2;
         // move current2 forward to next position
