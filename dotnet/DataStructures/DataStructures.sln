@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{91EBD42E-FB36-4EEF-8393-7DE83CB7D25E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{91EBD42E-FB36-4EEF-8393-7DE83CB7D25E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructuresTest", "DataStructuresTest\DataStructuresTest.csproj", "{6CB924B8-C900-494F-8704-C65E83B1A78B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructuresTest", "DataStructuresTest\DataStructuresTest.csproj", "{6CB924B8-C900-494F-8704-C65E83B1A78B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenges", "CodeChallenges\CodeChallenges.csproj", "{A4956658-5400-452A-8BE0-40DD6CA6B408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenges", "CodeChallenges\CodeChallenges.csproj", "{A4956658-5400-452A-8BE0-40DD6CA6B408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChellengesTest", "CodeChellengesTest\CodeChellengesTest.csproj", "{5BCE656C-0475-4936-8E16-262B735618A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChellengesTest", "CodeChellengesTest\CodeChellengesTest.csproj", "{5BCE656C-0475-4936-8E16-262B735618A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTests", "StackTests\StackTests.csproj", "{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5BCE656C-0475-4936-8E16-262B735618A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BCE656C-0475-4936-8E16-262B735618A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BCE656C-0475-4936-8E16-262B735618A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

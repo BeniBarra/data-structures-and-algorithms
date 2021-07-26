@@ -1,25 +1,95 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace DataStructures
 {
-    public class Program : Zipper
-    {
+  public class Program
+  {
     public static void Main(string[] args)
     {
-      LinkedList list1 = new LinkedList();
-      list1.Insert(9);
-      list1.Insert(7);
-      list1.Insert(5);
-      list1.Insert(3);
-      list1.Insert(1);
-
-      LinkedList list2 = new LinkedList();
-      list2.Insert(8);
-      list2.Insert(6);
-      list2.Insert(4);
-      list2.Insert(2);
-
-      ZipLists(list1, list2);
+      StackIterative();
+      //StackRecursive();
     }
+
+    private static void StackIterative()
+    {
+      Stack<string> myFamily = new Stack<string>();
+      myFamily.Push("Andres");
+      myFamily.Push("Bernie");
+      myFamily.Push("Caro");
+      myFamily.Push("Esther");
+
+      string returnStr = "";
+
+      while (myFamily.Peek())
+      {
+        returnStr = myFamily.Pop();
+        Console.WriteLine(returnStr);
+      }
+
+      //foreach (Node<string> person in myFamily)
+      //{
+      //  Console.WriteLine(person.Value);
+      //}
+    }
+
+    static void StackRecursive()
+    {
+      Stack<string> myFamily = new Stack<string>();
+      myFamily.Push("Andres");
+      myFamily.Push("Bernie");
+      myFamily.Push("Caro");
+      myFamily.Push("Esther");
+      IterateStackRecursively(myFamily);
+    }
+
+    static void IterateStackRecursively(Stack<string> stack)
+    {
+      if (stack.Peek()) { return; }
+
+      string person = stack.Pop();
+      Console.WriteLine(person);
+
+      IterateStackRecursively(stack);
+    }
+
+    static void QueueIterative()
+    {
+      Queue<string> myFamily = new Queue<string>();
+      myFamily.Enqueue("Andres");
+      myFamily.Enqueue("Bernie");
+      myFamily.Enqueue("Caro");
+      myFamily.Enqueue("Esther");
+
+      while (myFamily.Peek() == myFamily.Front.Value)
+      {
+        Node<string> person = myFamily.Dequeue();
+        Console.WriteLine(person.Value);
+      }
+    }
+
+    static void QueueRecursively()
+    {
+      Queue<string> myFamily = new Queue<string>();
+      myFamily.Enqueue("Andres");
+      myFamily.Enqueue("Bernie");
+      myFamily.Enqueue("Caro");
+      myFamily.Enqueue("Esther");
+
+      IterateQueueRecursively(myFamily);
+    }
+
+    private static void IterateQueueRecursively(Queue<string> queue)
+    {
+      if (queue.Peek() != queue.Front.Value) { return; }
+      {
+        Node<string> person = queue.Dequeue();
+        Console.WriteLine(person.Value);
+
+        IterateQueueRecursively(queue);
+      }
+    }
+
   }
 }
