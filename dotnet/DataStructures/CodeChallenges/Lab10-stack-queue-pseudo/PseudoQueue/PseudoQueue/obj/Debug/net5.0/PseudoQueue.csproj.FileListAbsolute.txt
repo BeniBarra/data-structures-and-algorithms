@@ -1,0 +1,16 @@
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.exe
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.deps.json
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.runtimeconfig.json
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.runtimeconfig.dev.json
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.dll
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\ref\PseudoQueue.dll
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\bin\Debug\net5.0\PseudoQueue.pdb
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.csproj.AssemblyReference.cache
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.AssemblyInfoInputs.cache
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.AssemblyInfo.cs
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.csproj.CoreCompileInputs.cache
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.dll
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\ref\PseudoQueue.dll
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.pdb
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Lab10-stack-queue-pseudo\PseudoQueue\PseudoQueue\obj\Debug\net5.0\PseudoQueue.genruntimeconfig.cache
