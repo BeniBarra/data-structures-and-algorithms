@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-  class Queue<T>
+  public class Queue<T>
   {
     public Node<T> Front { get; set; }
 

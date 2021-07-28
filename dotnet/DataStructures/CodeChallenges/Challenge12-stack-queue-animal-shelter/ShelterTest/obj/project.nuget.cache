@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I+hFd4U9pIbNnKlrcEIJB66TWi10eoB7QzYOMGEYmGAK4W7isF8an9tdZFtMvPgCJrzBZO0/68ipna6QdFmBBg==",
+  "dgSpecHash": "6J0ZncqB72UJzLqyXbeE8ggTVVRWLAShVQA6S/NvfFjD+/8C/GY6WiJ2AHpFXowKP0DlElp87enTCeD032NIbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChellengesTest\\CodeChellengesTest.csproj",
+  "projectFilePath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChallenges\\Challenge12-stack-queue-animal-shelter\\ShelterTest\\ShelterTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\locoq\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\locoq\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

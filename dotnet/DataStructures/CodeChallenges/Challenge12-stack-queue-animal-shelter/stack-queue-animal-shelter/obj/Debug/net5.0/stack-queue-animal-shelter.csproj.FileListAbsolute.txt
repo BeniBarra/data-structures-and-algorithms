@@ -1,0 +1,5 @@
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\obj\Debug\net5.0\stack-queue-animal-shelter.csproj.AssemblyReference.cache
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\obj\Debug\net5.0\stack-queue-animal-shelter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\obj\Debug\net5.0\stack-queue-animal-shelter.AssemblyInfoInputs.cache
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\obj\Debug\net5.0\stack-queue-animal-shelter.AssemblyInfo.cs
+C:\Users\locoq\repo\data-structures-and-algorithms\dotnet\DataStructures\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\obj\Debug\net5.0\stack-queue-animal-shelter.csproj.CoreCompileInputs.cache
