@@ -12,19 +12,19 @@ namespace DataStructures
     public Stack stack { get; set; } = new Stack();
     public Node<T> Top { get; set; }
 
-    public bool Peek()
+    public T Peek()
     {
       //if (EmptyStack())
       //{
       //  throw new Exception("Someone forgot to make a stack");
       //}
-      if (Top != null)
+      if (Top == null)
       {
-        return true;
+        throw new NullReferenceException();
       }
       else
       {
-        return false;
+        return Top.Value;
       }
     }
 
@@ -47,7 +47,7 @@ namespace DataStructures
       return currentTop.Value;
     }
 
-    public bool EmptyStack()
+    public bool IsEmpty()
     {
       return (Top == null);
     }
