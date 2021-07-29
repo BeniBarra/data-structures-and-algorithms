@@ -7,23 +7,23 @@ namespace DataStructuresTest
 {
   public class UnitTest1<T>
   {
-    [Fact]
-    public void ProofOfLife()
-    {
-      DataStructures.LinkedList<T> list = new DataStructures.LinkedList<T>();
-      Assert.NotNull(list);
-    }
+    //[Fact]
+    //public void ProofOfLife()
+    //{
+    //  DataStructures.LinkedList<T> list = new DataStructures.LinkedList<T>();
+    //  Assert.NotNull(list);
+    //}
 
-    [Fact]
-    public void ProofOfHeadAndNext()
-    {
-      DataStructures.LinkedList<int> list = new DataStructures.LinkedList<int>();
-      list.Insert(3);
-      list.Insert(6);
-      list.Insert(9);
-      Assert.Equal(9, list.Head.Value);
-      Assert.Equal(6, list.Head.Next.Value);
-    }
+    //[Fact]
+    //public void ProofOfHeadAndNext()
+    //{
+    //  DataStructures.LinkedList<int> list = new DataStructures.LinkedList<int>();
+    //  list.Insert(3);
+    //  list.Insert(6);
+    //  list.Insert(9);
+    //  Assert.Equal(9, list.Head.Value);
+    //  Assert.Equal(6, list.Head.Next.Value);
+    //}
 
     //[Fact]
     //public void ProofOfInsertAndList()

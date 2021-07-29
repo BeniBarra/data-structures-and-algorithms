@@ -7,51 +7,85 @@ namespace StackTests
   public class StackTests
   {
     [Fact]
-    public void PushStacksTest()
+    public void ReturnsValidBracket()
     {
-      //Assert push
-      Stack<string> myFamily = new();
-      myFamily.Push("Andres");
-      myFamily.Push("Bernie");
-      myFamily.Push("Caro");
-      myFamily.Push("Esther");
-
-      Assert.Equal("Esther", myFamily.Top.Value);
-      Assert.Equal("Bernie", myFamily.Top.Next.Next.Value);
+      string str = "{[()]}";
+      Assert.True(ValidBrackets(str));
     }
-    [Fact]
-    public void PopStacksTest()
-    {
-      //Assert EmptyStack and catch throw
-      Stack<string> myFamily = new();
-      myFamily.Push("Andres");
-      myFamily.Push("Bernie");
-      myFamily.Push("Caro");
-      myFamily.Push("Esther");
 
-      while (myFamily.Peek())
+    [Fact]
+    void ReturnsInvalidBracket()
+    {
+      string str = "{[}]";
+      Assert.False(ValidBrackets(str));
+    }
+
+    public static bool ValidBrackets(string str)
+    {
+      char temp;
+      Stack<char> stack = new Stack<char>();
+      foreach (char c in str)
       {
-        myFamily.Pop();
+        if (c == '{' || c == '[' || c == '(')
+        {
+          stack.Push(c);
+          temp = stack.Peek();
+          Console.WriteLine($"{temp} was push to stack");
+        }
+        else if (c == '}')
+        {
+          temp = stack.Peek();
+          if (temp == '{')
+          {
+            stack.Pop();
+          }
+          else
+          {
+            Console.WriteLine("Invalid } Bracket");
+            return false;
+          }
+        }
+
+        else if (c == ']')
+        {
+          temp = stack.Peek();
+          if (temp == '[')
+          {
+            stack.Pop();
+          }
+          else
+          {
+            Console.WriteLine("Invalid ] Bracket");
+            return false;
+          }
+        }
+
+        else if (c == ')')
+        {
+          temp = stack.Peek();
+          if (temp == '(')
+          {
+            stack.Pop();
+          }
+          else
+          {
+            Console.WriteLine("Invalid ) Bracket");
+            return false;
+          }
+        }
       }
-      //Assert.Throws<Exception>(() => myFamily.Pop());
-      Assert.True(myFamily.EmptyStack());
-    }
-    [Fact]
-    public void StackPeekTest()
-    {
-      //Assert an empty stack & Assert Peek
-      Stack<string> myFamily = new();
 
-      Assert.True(myFamily.EmptyStack());
-
-      Assert.Throws<Exception>(() => myFamily.Peek());
-      myFamily.Push("Andres");
-      myFamily.Push("Bernie");
-      myFamily.Push("Caro");
-      myFamily.Push("Esther");
-
-      Assert.True(myFamily.Peek());
-
+      if (stack.IsEmpty() == true)
+      {
+        Console.WriteLine("All Brackets Valid");
+        return true;
+      }
+      else
+      {
+        Console.WriteLine("You made it to the end");
+        return false;
+      }
     }
   }
 }
+
