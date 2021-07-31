@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\stack-queue-animal-shelter.csproj" />
-    <ProjectReference Include="..\DataStructures\DataStructures.csproj" />
   </ItemGroup>
 
 </Project>

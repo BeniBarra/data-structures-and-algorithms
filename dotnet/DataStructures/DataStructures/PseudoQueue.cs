@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PseudoQueue.Classes
+namespace DataStructures
 {
   public class PseudoQueue<T>
   {
@@ -19,13 +19,13 @@ namespace PseudoQueue.Classes
 
     public T Dequeue()
     {
-      if (!stack1.Peek()) throw new NullReferenceException();
-      while (stack1.Peek())
+      if (stack1.Peek() == null) throw new NullReferenceException();
+      while (stack1.Peek() != null)
       {
         stack2.Push(stack1.Pop());
       }
       T tempVal = stack2.Pop();
-      while (stack2.Peek())
+      while (stack2.Peek() != null)
       {
         stack1.Push(stack2.Pop());
       }

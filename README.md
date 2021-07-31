@@ -16,6 +16,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [stack-and-queue](./dotnet/DataStructures/CodeChallenges/Lab09-stacks-and-queues/README.md)
 - [stack-queue-pseudo](./dotnet/DataStructures/CodeChallenges/Lab10-stack-queue-pseudo/README.md)
 - [stack-queue-shelter](./dotnet/DataStructures/CodeChallenges/Challenge12-stack-queue-animal-shelter/README.md)
+- [trees](./dotnet/DataStructures/CodeChallenges/CC15-trees/README.md)
 
 ### 301 Code Challenges
 
