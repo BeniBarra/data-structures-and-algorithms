@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "DataStructures/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/DataStructures.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataStructures.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "DataStructures/1.0.0": {
-      "type": "project",
-      "path": "../DataStructures/DataStructures.csproj",
-      "msbuildProject": "../DataStructures/DataStructures.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "DataStructures >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\locoq\\.nuget\\packages\\": {}
@@ -52,11 +33,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj": {
-              "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

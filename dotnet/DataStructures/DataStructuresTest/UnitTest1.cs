@@ -5,139 +5,141 @@ using Xunit;
 
 namespace DataStructuresTest
 {
-  public class UnitTest1<T>
+  public class UnitTest1
   {
-    //[Fact]
-    //public void ProofOfLife()
-    //{
-    //  DataStructures.LinkedList<T> list = new DataStructures.LinkedList<T>();
-    //  Assert.NotNull(list);
-    //}
+    [Fact]
+    public void ProofOfPreOrderAndAdd()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      int[] numbers = new int[] { 9, 4, 17, 3, 6, 22, 5, 7, 20 };
 
-    //[Fact]
-    //public void ProofOfHeadAndNext()
-    //{
-    //  DataStructures.LinkedList<int> list = new DataStructures.LinkedList<int>();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  Assert.Equal(9, list.Head.Value);
-    //  Assert.Equal(6, list.Head.Next.Value);
-    //}
+      foreach (int num in numbers) { tree.Add(tree.Root, num); }
+      List<int> nodeValues = new List<int>();
+      nodeValues = PreOrderTraversal(tree.Root, new List<int>());
 
-    //[Fact]
-    //public void ProofOfInsertAndList()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  Assert.True(list.Includes(6));
-    //  Assert.False(list.Includes(12));
-    //}
+      string testNumbers = "";
 
-    //[Fact]
-    //public void ProofOflistAndPrint()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  Assert.Equal("(9) -> (6) -> (3) -> NULL", list.Print());
-    //}
+      foreach (int value in nodeValues)
+      {
+        testNumbers += $"{value} ";
+      }
+      Assert.Equal("9 4 3 6 5 7 17 22 20 ", testNumbers);
+    }
 
-    //[Fact]
-    //public void ProofOfAppend()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Append(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  Assert.Equal("(9) -> (6) -> (3) -> NULL", list.Print());
-    //}
+    [Fact]
+    public void ProofOfInOrderAndAdd()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      int[] numbers = new int[] { 9, 4, 17, 3, 6, 22, 5, 7, 20 };
+
+      foreach (int num in numbers) { tree.Add(tree.Root, num); }
+      List<int> nodeValues = new List<int>();
+      nodeValues = InOrderTraversal(tree.Root, new List<int>());
+
+      string testNumbers = "";
+
+      foreach (int value in nodeValues)
+      {
+        testNumbers += $"{value} ";
+      }
+      Assert.Equal("3 4 5 6 7 9 17 20 22 ", testNumbers);
+    }
+
+    [Fact]
+    public void ProofOfPostOrderAndAdd()
+    {
+      BinarySearchTree<int> tree = new BinarySearchTree<int>();
+      int[] numbers = new int[] { 9, 4, 17, 3, 6, 22, 5, 7, 20 };
+
+      foreach (int num in numbers) { tree.Add(tree.Root, num); }
+      List<int> nodeValues = new List<int>();
+      nodeValues = PostOrderTraversal(tree.Root, new List<int>());
+
+      string testNumbers = "";
+
+      foreach (int value in nodeValues)
+      {
+        testNumbers += $"{value} ";
+      }
+      Assert.Equal("3 5 7 6 4 20 22 17 9 ", testNumbers);
+    }
 
 
 
-    //[Fact]
-    //public void ProofOfInsertBefore()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  // Test's inserting at middle of list
-    //  list.InsertBefore(6, 12);
-    //  // Test's inserting at Head of list
-    //  list.InsertBefore(9, 15);
-    //  Assert.Equal("(15) -> (9) -> (12) -> (6) -> (3) -> NULL", list.Print());
-    //}
 
-    //[Fact]
-    //public void ProofOfInsertAfter()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  // Test's inserting at middle of list
-    //  list.InsertBefore(6, 12);
-    //  // Test's inserting at Head of list
-    //  Assert.Equal("(9) -> (12) -> (6) -> (3) -> NULL", list.Print());
-    //}
+    //------------------------------------------------------------------------------------------//
 
-    //[Fact]
-    //public void ProofOfkth()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  list.Insert(12);
-    //  list.Insert(15);
-    //  list.Insert(18);
-    //  Assert.Equal(12, list.kthFromEnd(4));
-    //}
 
-    //[Fact]
-    //public void ProofOfkthOutOfRange()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  list.Insert(3);
-    //  list.Insert(6);
-    //  list.Insert(9);
-    //  list.Insert(12);
-    //  list.Insert(15);
-    //  list.Insert(18);
-    //  Assert.Equal(-1, list.kthFromEnd(10));
-    //}
 
-    //[Fact]
-    //public void ProofOfkthNoList()
-    //{
-    //  LinkedList list = new LinkedList();
-    //  Assert.Equal(-2, list.kthFromEnd(10));
-    //}
 
-    //[Fact]
-    //public void ZipperTests()
-    //{
-    //  LinkedList list1 = new LinkedList();
-    //  list1.Insert(9);
-    //  list1.Insert(7);
-    //  list1.Insert(5);
-    //  list1.Insert(3);
-    //  list1.Insert(1);
+    public List<int> PreOrderTraversal(Node<int> node, List<int> values)
+    {
+      values.Add(node.Value);
 
-    //  LinkedList list2 = new LinkedList();
-    //  list2.Insert(8);
-    //  list2.Insert(6);
-    //  list2.Insert(4);
-    //  list2.Insert(2);
+      if (node.Left != null) { PreOrderTraversal(node.Left, values); }
+      if (node.Right != null) { PreOrderTraversal(node.Right, values); }
+      return values;
+    }
 
-    //  Assert.Equal(
-    //    "(1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> (9) -> NULL",
-    //    ZipLists(list1, list2)
-    //    );
-    //}
+    public List<int> InOrderTraversal(Node<int> node, List<int> values)
+    {
+      if (node.Left != null) { InOrderTraversal(node.Left, values); }
+
+      values.Add(node.Value);
+
+      if (node.Right != null) { InOrderTraversal(node.Right, values); }
+
+      return values;
+    }
+
+    public List<int> PostOrderTraversal(Node<int> node, List<int> values)
+    {
+      if (node.Left != null) { PostOrderTraversal(node.Left, values); }
+      if (node.Right != null) { PostOrderTraversal(node.Right, values); }
+
+      values.Add(node.Value);
+
+      return values;
+    }
+
+    public List<int> LevelOrderTraversal(BinarySearchTree<int> tree)
+    {
+      List<int> values = new List<int>();
+      DataStructures.Queue<Node<int>> nodes = new DataStructures.Queue<Node<int>>();
+
+      nodes.Enqueue(tree.Root);
+
+      while (nodes.Peek() != null)
+      {
+        Node<Node<int>> node = nodes.Dequeue();
+        Node<int> currentNode = node.Value;
+
+        values.Add(currentNode.Value);
+
+        if (currentNode.Left != null) { nodes.Enqueue(currentNode.Left); }
+        if (currentNode.Right != null) { nodes.Enqueue(currentNode.Right); }
+      }
+      return values;
+    }
+
+    public bool Contains(Node<int> root, int target)
+    {
+      if (root != null)
+      {
+        if (root.Value == target)
+        {
+          return true;
+        }
+      }
+      else if (root.Value > target)
+      {
+        return Contains(root.Left, target);
+      }
+      else if (root.Value < target)
+      {
+        return Contains(root.Right, target);
+      }
+      return false;
+    }
   }
 }

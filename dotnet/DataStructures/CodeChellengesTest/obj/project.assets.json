@@ -1671,16 +1671,6 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "DataStructures/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/DataStructures.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataStructures.dll": {}
-        }
-      },
       "stack-queue-animal-shelter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5927,11 +5917,6 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "DataStructures/1.0.0": {
-      "type": "project",
-      "path": "../DataStructures/DataStructures.csproj",
-      "msbuildProject": "../DataStructures/DataStructures.csproj"
-    },
     "stack-queue-animal-shelter/1.0.0": {
       "type": "project",
       "path": "../CodeChallenges/Challenge12-stack-queue-animal-shelter/stack-queue-animal-shelter/stack-queue-animal-shelter.csproj",
@@ -5940,7 +5925,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataStructures >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2",
       "stack-queue-animal-shelter >= 1.0.0",
@@ -5977,9 +5961,6 @@
           "projectReferences": {
             "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChallenges\\Challenge12-stack-queue-animal-shelter\\stack-queue-animal-shelter\\stack-queue-animal-shelter.csproj": {
               "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChallenges\\Challenge12-stack-queue-animal-shelter\\stack-queue-animal-shelter\\stack-queue-animal-shelter.csproj"
-            },
-            "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj": {
-              "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj"
             }
           }
         }

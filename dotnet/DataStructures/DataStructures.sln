@@ -13,10 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChellengesTest", "CodeC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTests", "StackTests\StackTests.csproj", "{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stack-queue-animal-shelter", "CodeChallenges\Challenge12-stack-queue-animal-shelter\stack-queue-animal-shelter\stack-queue-animal-shelter.csproj", "{96EF5CB0-CE25-4250-80BE-F23B049292FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShelterTest", "CodeChallenges\Challenge12-stack-queue-animal-shelter\ShelterTest\ShelterTest.csproj", "{3C424ED9-E6A9-4650-A678-E9BF9F3789FF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +39,6 @@ Global
 		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC18E3CF-9B1C-4896-968A-4305B3EDC1BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96EF5CB0-CE25-4250-80BE-F23B049292FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96EF5CB0-CE25-4250-80BE-F23B049292FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96EF5CB0-CE25-4250-80BE-F23B049292FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96EF5CB0-CE25-4250-80BE-F23B049292FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C424ED9-E6A9-4650-A678-E9BF9F3789FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C424ED9-E6A9-4650-A678-E9BF9F3789FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C424ED9-E6A9-4650-A678-E9BF9F3789FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C424ED9-E6A9-4650-A678-E9BF9F3789FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

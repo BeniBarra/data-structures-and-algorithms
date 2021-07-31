@@ -84,9 +84,6 @@
             "projectReferences": {
               "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChallenges\\Challenge12-stack-queue-animal-shelter\\stack-queue-animal-shelter\\stack-queue-animal-shelter.csproj": {
                 "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\CodeChallenges\\Challenge12-stack-queue-animal-shelter\\stack-queue-animal-shelter\\stack-queue-animal-shelter.csproj"
-              },
-              "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj": {
-                "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj"
               }
             }
           }
@@ -122,60 +119,6 @@
               "version": "[2.4.3, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj",
-        "projectName": "DataStructures",
-        "projectPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\DataStructures.csproj",
-        "packagesPath": "C:\\Users\\locoq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\locoq\\repo\\data-structures-and-algorithms\\dotnet\\DataStructures\\DataStructures\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\locoq\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
