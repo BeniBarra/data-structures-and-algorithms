@@ -79,5 +79,27 @@ namespace DataStructures
       }
       return false;
     }
+
+    public static int findMax(Node<int> node)
+    {
+      if (node == null)
+      {
+        return int.MinValue;
+      }
+
+      int res = node.Value;
+      int lRes = findMax(node.Left);
+      int rRes = findMax(node.Right);
+
+      if(lRes > res)
+      {
+        res = lRes;
+      }
+      if (rRes > res)
+      {
+        res = rRes;
+      }
+      return res;
+    }
   }
 }
