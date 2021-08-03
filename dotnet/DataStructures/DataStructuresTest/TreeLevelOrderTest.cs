@@ -1,12 +1,14 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using DataStructures;
+using Xunit;
 
-namespace DataStructures
+namespace DataStructuresTest
 {
-  public class Program : BinaryTree<int>
+  public class TreeLevelOrderTest : BinaryTree<int>
   {
-    public static void Main(string[] args)
+    [Fact]
+    public void BinaryTreeFindMaxTest()
     {
       BinaryTree<int> tree = new BinaryTree<int>();
 
@@ -30,10 +32,11 @@ namespace DataStructures
       Five.Right = Eight;
       Six.Left = Nine;
 
-      string numList = LevelOrderTraversal(tree);
+      List<int> list = new List<int>();
+      string numbers = "2752695114";
 
-      
-      Console.WriteLine($"{numList}");
+      //Asserts values are retruned by level
+      Assert.Equal(numbers, LevelOrderTraversal(tree));
     }
 
   }

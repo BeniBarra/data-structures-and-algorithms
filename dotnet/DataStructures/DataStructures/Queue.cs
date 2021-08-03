@@ -14,7 +14,7 @@ namespace DataStructures
 
     public T Peek()
     {
-      if (EmptyQueue())
+      if (Front.Value == null)
       {
         throw new Exception("No one is in the Queue");
       }
