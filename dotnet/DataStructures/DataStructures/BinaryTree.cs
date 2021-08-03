@@ -40,14 +40,14 @@ namespace DataStructures
       return values;
     }
 
-    public List<int> LevelOrderTraversal(BinarySearchTree<int> tree)
+    public static string LevelOrderTraversal(BinaryTree<int> tree)
     {
       List<int> values = new List<int>();
       Queue<Node<int>> nodes = new Queue<Node<int>>();
 
       nodes.Enqueue(tree.Root);
 
-      while(nodes.Peek() != null)
+      while(nodes.Front != null)
       {
         Node<Node<int>> node = nodes.Dequeue();
         Node<int> currentNode = node.Value;
@@ -57,7 +57,12 @@ namespace DataStructures
         if( currentNode.Left != null) { nodes.Enqueue(currentNode.Left); }
         if (currentNode.Right != null) { nodes.Enqueue(currentNode.Right); }
       }
-      return values;
+      string numList = "";
+      foreach (int num in values)
+      {
+        numList += num;
+      }
+      return numList;
     }
 
     public bool Contains(Node<int> root, int target)
