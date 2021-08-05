@@ -106,5 +106,27 @@ namespace DataStructures
       }
       return res;
     }
+
+    public static int GetTotalBST(BinarySearchTree<int> tree)
+    {
+      int localSum = 0;
+
+      Node<int> target = tree.Root;
+      localSum = target.Value;
+
+      if (target.Left != null)
+      {
+        BinarySearchTree<int> newTree = new BinarySearchTree<int>();
+        newTree.Root = target.Left;
+        localSum += GetTotalBST(newTree);
+      }
+      if (target.Right != null)
+      {
+        BinarySearchTree<int> newTree = new BinarySearchTree<int>();
+        newTree.Root = target.Right;
+        localSum += GetTotalBST(newTree);
+      }
+      return localSum;
+    }
   }
 }

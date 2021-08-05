@@ -18,6 +18,8 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [stack-queue-shelter](./dotnet/DataStructures/CodeChallenges/Challenge12-stack-queue-animal-shelter/README.md)
 - [trees](./dotnet/DataStructures/CodeChallenges/CC15-trees/README.md)
 - [tree-max](./dotnet/DataStructures/CodeChallenges/CC16-tree-max/README.md)
+- [tree-breadth-first](./dotnet/DataStructures/CodeChallenges/CC17-tree-breadth-first/README.md)
+- [tree-fizz-buzz](./dotnet/DataStructures/CodeChallenges/CC18-FizzBuzz/README.md)
 
 ### 301 Code Challenges
 
