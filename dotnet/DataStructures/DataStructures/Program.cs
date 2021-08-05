@@ -4,37 +4,30 @@ using System.Collections.Generic;
 
 namespace DataStructures
 {
-  public class Program : BinaryTree<int>
+  public class Program : NaryTree<int>
   {
     public static void Main(string[] args)
     {
-      BinaryTree<int> tree = new BinaryTree<int>();
+      NaryTree<int> tree = new NaryTree<int>();
 
-      Node<int> One = new Node<int>(2);
-      Node<int> Two = new Node<int>(7);
-      Node<int> Three = new Node<int>(5);
-      Node<int> Four = new Node<int>(2);
-      Node<int> Five = new Node<int>(6);
-      Node<int> Six = new Node<int>(9);
-      Node<int> Seven = new Node<int>(5);
-      Node<int> Eight = new Node<int>(11);
-      Node<int> Nine = new Node<int>(4);
+      Node<int> root = new(2);
+      Node<int> c1A = new(3);
+      Node<int> c1B = new(7);
+      Node<int> c1C = new(5);
+      root.Leaves.Add(c1A);
+      root.Leaves.Add(c1B);
+      root.Leaves.Add(c1C);
 
-      tree.Root = One;
-      One.Left = Two;
-      One.Right = Three;
-      Two.Left = Four;
-      Two.Right = Five;
-      Three.Right = Six;
-      Five.Left = Seven;
-      Five.Right = Eight;
-      Six.Left = Nine;
+      Node<int> c2A = new(14);
+      Node<int> c2B = new(10);
+      Node<int> c2C = new(15);
+      Node<int> c2D = new(30);
+      c1B.Leaves.Add(c2A);
+      c1B.Leaves.Add(c2B);
+      c1B.Leaves.Add(c2C);
+      c1B.Leaves.Add(c2D);
 
-      string numList = LevelOrderTraversal(tree);
-
-      
-      Console.WriteLine($"{numList}");
+      FizzBuzz(tree);
     }
-
   }
 }
