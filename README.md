@@ -20,6 +20,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [tree-max](./dotnet/DataStructures/CodeChallenges/CC16-tree-max/README.md)
 - [tree-breadth-first](./dotnet/DataStructures/CodeChallenges/CC17-tree-breadth-first/README.md)
 - [tree-fizz-buzz](./dotnet/DataStructures/CodeChallenges/CC18-FizzBuzz/README.md)
+- [insertion-sort](./dotnet/DataStructures/CodeChallenges/CC26-insertion-sort/README.md)
 
 ### 301 Code Challenges
 
