@@ -1,4 +1,4 @@
-# trees
+# Insert-Sort
 CodeChallenge 26  
 
 ## Blog Article
