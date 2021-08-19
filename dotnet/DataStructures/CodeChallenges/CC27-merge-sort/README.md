@@ -50,12 +50,3 @@ ALGORITHM Merge(left, right, arr)
 ![merge-sort](./merge-sort.png)
 
 ## Approach & Efficiency  
-- MegreSort first splits the base array in half. Each half is assign to variable:
-    - left = first half of base array
-    - right = second half of base array
-- The left and right array are continued to be split through recursion,
-- Since MergeSort takes in an array, and while it's possible splits the array in hald and assignes the halfs to new right and left arrays.
-- This is accomplished by calling MergeSort( left ) & MergeSort( right )
-- Once all instances of left and right arrays only contain 1 value
-- our Merge method begins to compare and sort the numbers in order, "Merge(left, right)"
-- Now that each instance of right and left are in order, we compare each unit to the other once again to establish proper order, returning the final properly merged and ordered array
