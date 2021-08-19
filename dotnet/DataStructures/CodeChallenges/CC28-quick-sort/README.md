@@ -44,6 +44,6 @@ ALGORITHM Swap(arr, i, low)
 ```
 
 ## Whiteboard
-![quick-sort1](./quicksort1.png)
-![quick-sort2](./quicksort2.png)
-![quick-sort3](./quicksort3.png)
+![quick-sort1](quicksort1.png)
+![quick-sort2](quicksort2.png)
+![quick-sort3](quicksort3.png)
