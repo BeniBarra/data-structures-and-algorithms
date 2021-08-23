@@ -72,7 +72,7 @@ namespace DataStructures
         {
           if (current.Value.Key == key)
           {
-            string got = $"{current.Value.Key}: {current.Value.Value}";
+            string got = $"{current.Value.Value}";
             return got;
           }
           current = current.Next;
@@ -80,6 +80,22 @@ namespace DataStructures
       }
       string missingItem = $"Item: {key}, not found";
       return missingItem;
+    }
+
+    public static string FindRepeats(string sentence)
+    {
+      string noRepeats = "There are no repeats in this sentence";
+      string[] words = sentence.Split(" ");
+      HashMap check = new(31);
+      foreach (string word in words)
+      {
+        if (check.Contains($"{word}"))
+        {
+          return word;
+        }
+        check.Set($"{word}", $"{1}");
+      }
+      return noRepeats;
     }
 
     public void Print()
