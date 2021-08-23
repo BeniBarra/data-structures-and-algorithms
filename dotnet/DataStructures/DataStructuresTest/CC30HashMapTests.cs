@@ -5,7 +5,7 @@ using Xunit;
 
 namespace DataStructuresTest
 {
-  public class CC29HashMapTests
+  public class CCHashMapTests
   {
 
     [Fact]
