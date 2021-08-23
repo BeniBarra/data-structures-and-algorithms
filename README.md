@@ -21,6 +21,9 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [tree-breadth-first](./dotnet/DataStructures/CodeChallenges/CC17-tree-breadth-first/README.md)
 - [tree-fizz-buzz](./dotnet/DataStructures/CodeChallenges/CC18-FizzBuzz/README.md)
 - [insertion-sort](./dotnet/DataStructures/CodeChallenges/CC26-insertion-sort/README.md)
+- [merge-sort](./dotnet/DataStructures/CodeChallenges/CC27-merge-sort/README.md)
+- [quick-sort](./dotnet/DataStructures/CodeChallenges/CC28-quick-sort/README.md)
+- [hashmaps](./dotnet/DataStructures/CodeChallenges/CC29-hashmaps/README.md)
 
 ### 301 Code Challenges
 
