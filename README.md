@@ -23,7 +23,10 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [insertion-sort](./dotnet/DataStructures/CodeChallenges/CC26-insertion-sort/README.md)
 - [merge-sort](./dotnet/DataStructures/CodeChallenges/CC27-merge-sort/README.md)
 - [quick-sort](./dotnet/DataStructures/CodeChallenges/CC28-quick-sort/README.md)
-- [hashmaps](./dotnet/DataStructures/CodeChallenges/CC29-hashmaps/README.md)
+- [hashmaps](./dotnet/DataStructures/CodeChallenges/CC30-hashmaps/README.md)
+- [hashmaps-repeated-word](./dotnet/DataStructures/CodeChallenges/CC31-hashmap-repeated-word/README.md)
+- [hashmaps-binary-word](./dotnet/DataStructures/CodeChallenges/CC32-hashmap-binar-word/README.md)
+- [hashmaps-leftjoin](./dotnet/DataStructures/CodeChallenges/CC33-hashmap-left-join/README.md)
 
 ### 301 Code Challenges
 
