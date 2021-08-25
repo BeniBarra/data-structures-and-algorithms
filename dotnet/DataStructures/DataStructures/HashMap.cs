@@ -8,7 +8,7 @@ namespace DataStructures
 {
   public class HashMap
   {
-    private LinkedList<KeyValuePair<string,string>>[] Map { get; set; }
+    private LinkedList<KeyValuePair<string, string>>[] Map { get; set; }
     public HashMap(int size)
     {
       Map = new LinkedList<KeyValuePair<string, string>>[size];
@@ -20,7 +20,7 @@ namespace DataStructures
 
       char[] letters = key.ToCharArray();
 
-      for(int i = 0; i < letters.Length; i++)
+      for (int i = 0; i < letters.Length; i++)
       {
         hashValue += letters[i];
       }
@@ -34,7 +34,7 @@ namespace DataStructures
     {
       int hashKey = Hash(key);
 
-      if(Map[hashKey] == null)
+      if (Map[hashKey] == null)
       {
         Map[hashKey] = new LinkedList<KeyValuePair<string, string>>();
       }
@@ -47,13 +47,13 @@ namespace DataStructures
     {
       int hashKey = Hash(key);
 
-      if(Map[hashKey !] != null)
+      if (Map[hashKey!] != null)
       {
         Node<KeyValuePair<string, string>> current = Map[hashKey].Head;
 
-        while(current != null)
+        while (current != null)
         {
-          if(current.Value.Key == key) { return true; }
+          if (current.Value.Key == key) { return true; }
           current = current.Next;
         }
       }
@@ -82,6 +82,32 @@ namespace DataStructures
       return missingItem;
     }
 
+    public static List<string[]> LeftJoin(HashMap left, HashMap right)
+    {
+      List<string[]> joined = new();
+      for (int i = 0; i < left.Map.Length; i++)
+      {
+        if (left.Map[i] != null)
+        {
+          Node<KeyValuePair<string, string>> current = left.Map[i].Head;
+          while (current != null)
+          {
+            string[] newArray = new string[3];
+            newArray[0] = current.Value.Key;
+            newArray[1] = current.Value.Value;
+            if (right.Contains(current.Value.Key))
+            {
+              newArray[2] = right.Get(current.Value.Key);
+            }
+            joined.Add(newArray);
+            current = current.Next;
+          }
+        }
+       }
+      return joined;
+    }
+
+
     public static string FindRepeats(string sentence)
     {
       string noRepeats = "There are no repeats in this sentence";
@@ -100,13 +126,13 @@ namespace DataStructures
 
     public void Print()
     {
-      for(int i = 0; i < Map.Length; i++)
+      for (int i = 0; i < Map.Length; i++)
       {
         Console.Write($"{i} --");
-        if(Map[i] != null)
+        if (Map[i] != null)
         {
           Node<KeyValuePair<string, string>> current = Map[i].Head;
-          while(current != null)
+          while (current != null)
           {
             Console.Write($"[{current.Value.Key}: {current.Value.Value}] =>");
             current = current.Next;
