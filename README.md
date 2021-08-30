@@ -27,6 +27,7 @@ See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-co
 - [hashmaps-repeated-word](./dotnet/DataStructures/CodeChallenges/CC31-hashmap-repeated-word/README.md)
 - [hashmaps-binary-word](./dotnet/DataStructures/CodeChallenges/CC32-hashmap-binar-word/README.md)
 - [hashmaps-leftjoin](./dotnet/DataStructures/CodeChallenges/CC33-hashmap-left-join/README.md)
+- [graph](./dotnet/DataStructures/CodeChallenges/CC34-graphs/README.md)
 
 ### 301 Code Challenges
 
