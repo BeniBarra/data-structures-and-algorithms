@@ -56,5 +56,26 @@ namespace DataStructuresTest
       Assert.Null(graph.GetNodes());
     }
 
+    [Fact]
+    public void CanAddNodesAndEdges()
+    {
+      Graph<int> testGraph = new();
+      Vertex<int> node1 = testGraph.AddNode(7);
+      Vertex<int> node2 = testGraph.AddNode(9);
+      testGraph.AddEdge(node1, node2, 12);
+      Assert.Equal(7, testGraph.GetNodes()[0].Value);
+      Assert.Equal(12, testGraph.AdjacencyList[node1][0].Weight);
+    }
+
+    [Fact]
+    public void CanTrackSize()
+    {
+      Graph<int> testGraph = new();
+      Assert.Equal(0, testGraph.GetSize());
+      testGraph.AddNode(7);
+      testGraph.AddNode(9);
+      testGraph.AddNode(3);
+      Assert.Equal(3, testGraph.GetSize());
+    }
   }
 }
