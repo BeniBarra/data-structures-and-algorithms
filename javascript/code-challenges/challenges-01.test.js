@@ -9,9 +9,11 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  let answer = [];
-  arr.forEach( num => answer.push(num + 1));
-  return answer;
+  let result = [];
+  arr.forEach(num => {
+    result.push(num +1);
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -23,9 +25,11 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  let answer = [];
-  arr.forEach( words => answer.push(`${words}!`));
-  return answer;
+  let result = [];
+  arr.forEach(word =>{
+    result.push(word += '!');
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,9 +41,11 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  let answer = [];
-  arr.forEach( words => answer.push(`${words.toUpperCase()}`));
-  return answer;
+  let result = [];
+  arr.forEach(word => {
+    result.push(word.toUpperCase());
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,9 +61,11 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = (word) => `${word.toUpperCase()}!`;
 
 const speaker = (words, callback) => {
-  let answer = [];
-  words.forEach( i => answer.push(callback(i)));
-  return answer;
+  let result = [];
+  words.forEach(word =>{
+    result.push(callback(word));
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,11 +87,10 @@ Return the modified array.
 const addValues = (arr, value) => arr.push(value);
 
 const addNumbers = (num, arr, times, callback) => {
-  let answer = arr;
-  for (let i = 0; i < times; i++) {
-    callback(answer,num);
-  };
-  return answer;
+  for(let i=0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,13 +112,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  let answer = [];
-  availableItems.forEach(fruit => {
-    if(fruit.available === true) {
-      answer.push(fruit.name);
+  let result = [];
+  availableItems.forEach( item => {
+    if(item.available == true) {
+      result.push(item.name);
     }
-  });
-  return answer;
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -129,7 +136,20 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let result = [];
+  arr.forEach(num => {
+    if((num%3 == 0) && (num%5 == 0)) {
+      result.push(num = `Fizz Buzz`);
+    }
+    else if(num%3 == 0 ) {
+      result.push(num = `Fizz`);
+    }
+    else if( num%5 == 0) {
+      result.push(num = `Buzz`);
+    }
+    else result.push(num)
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -183,7 +203,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
