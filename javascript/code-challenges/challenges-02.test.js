@@ -181,7 +181,12 @@ const snorlaxAbilities = {
 };
 
 const extractAbilities = (arr) => {
-  // Solution code here...
+  //console.log(arr);
+  let result = [];
+  arr.map(snorlax => {
+    result.push(snorlax.ability.name);
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -228,7 +233,14 @@ const snorlaxStats = {
 };
 
 const extractStats = (arr) => {
-  // Solution code here...
+  let result = [];
+  arr.map(obj => {
+    result.push({
+      name: obj.stat.name,
+      total: obj.baseStat + obj.effort
+    });
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -322,14 +334,14 @@ describe('Testing challenge 8', () => {
   });
 });
 
-xdescribe('Testing challenge 9', () => {
+describe('Testing challenge 9', () => {
   test('It should return an array containing only the ability names', () => {
     expect(extractAbilities(snorlaxAbilities.abilities)).toStrictEqual(['gluttony', 'cute charm', 'immunity']);
     expect(extractAbilities(snorlaxAbilities.abilities).length).toStrictEqual(3);
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return an array containing objects with name and total values', () => {
     expect(extractStats(snorlaxStats.stats)).toStrictEqual([
       { name: 'speed', total: 35, },
