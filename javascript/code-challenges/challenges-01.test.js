@@ -23,9 +23,7 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  let answer = [];
-  arr.forEach( words => answer.push(`${words}!`));
-  return answer;
+  // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,9 +35,7 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  let answer = [];
-  arr.forEach( words => answer.push(`${words.toUpperCase()}`));
-  return answer;
+  // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,9 +51,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = (word) => `${word.toUpperCase()}!`;
 
 const speaker = (words, callback) => {
-  let answer = [];
-  words.forEach( i => answer.push(callback(i)));
-  return answer;
+  // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,11 +73,7 @@ Return the modified array.
 const addValues = (arr, value) => arr.push(value);
 
 const addNumbers = (num, arr, times, callback) => {
-  let answer = arr;
-  for (let i = 0; i < times; i++) {
-    callback(answer,num);
-  };
-  return answer;
+  // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,13 +95,7 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  let answer = [];
-  availableItems.forEach(fruit => {
-    if(fruit.available === true) {
-      answer.push(fruit.name);
-    }
-  });
-  return answer;
+  // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
